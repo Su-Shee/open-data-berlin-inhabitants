@@ -1,4 +1,8 @@
 open-data-berlin-inhabitants
 ============================
 
-open data handling (berlin related)
+Data about the inhabitants of Berlin (age, gender, nationality..)
+
+Uses a Makefile to fetch, preprocess and convert data. Stores data in
+PostgreSQL with a little Perl script, tests are run via PgTAP. Basic
+example visualization via R plus "sqldf" and GNUPlot.
