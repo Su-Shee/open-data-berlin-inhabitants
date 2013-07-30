@@ -198,7 +198,8 @@ SELECT results_eq(
 PREPARE by_children_percent_district AS
   SELECT 
     district, to_char( cast(
-        sum(case when age_high = '5' then quantity end) AS decimal)/sum(quantity)*100, 'FM990D99')    AS percent, sum(quantity) 
+        sum(case when age_high = '5' then quantity end) AS decimal)/sum(quantity)*100, 'FM990D99')    
+    AS percent, sum(quantity) 
   FROM 
     inhabitants 
   GROUP BY 
@@ -220,7 +221,8 @@ SELECT results_eq(
 PREPARE by_children_percent_official_district AS
   SELECT 
     official_district, to_char( cast( 
-        sum(case when age_high = '5' then quantity end) AS decimal)/sum(quantity)*100, 'FM990D99')    AS percent, sum(quantity) 
+        sum(case when age_high = '5' then quantity end) AS decimal)/sum(quantity)*100, 'FM990D99')
+    AS percent, sum(quantity) 
   FROM 
     inhabitants 
   GROUP BY 
