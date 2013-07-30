@@ -6,3 +6,8 @@ Data about the inhabitants of Berlin (age, gender, nationality..)
 Uses a Makefile to fetch, preprocess and convert data. Stores data in
 PostgreSQL with a little Perl script, tests are run via PgTAP. Basic
 example visualization via R plus "sqldf" and GNUPlot.
+
+### Example:
+
+
+![Example:](https://raw.github.com/Su-Shee/open-data-berlin-inhabitants/master/berlin-inhabitants.png)
