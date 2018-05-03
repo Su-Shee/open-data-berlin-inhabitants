@@ -6,7 +6,7 @@ berlin-inhabitants.png: top10women.dat
 top10women.dat: berlininhabitants-2011.dat
 	@awk '{if ($$2 ~ f){A[$$1] += count[$$2]++} next} END {for(i in A){ print i, A[i] }}' $< | \
 	 sort -nr -k2 | \
-   head -10 > $@
+         head -10 > $@
 
 berlininhabitants-2011.dat: berlininhabitants-2011.csv
 	@awk -F'";"' '{print $$2 "  " $$3}' $< | \
